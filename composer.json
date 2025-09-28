@@ -1,0 +1,14 @@
+{
+    "name": "test/dummy-php",
+    "version": "0.0.1",
+    "description": "Dummy PHP package for testing stuff",
+    "autoload": {
+        "psr-4": {
+            "Test\\DummyPhp\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpmetrics/phpmetrics": "v2.*",
+        "squizlabs/php_codesniffer": "4.*"
+    }
+}

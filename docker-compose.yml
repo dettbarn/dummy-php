@@ -1,0 +1,7 @@
+services:
+  php:
+    build: .
+    container_name: php
+    command: tail -F anything
+    volumes:
+      - .:/app
