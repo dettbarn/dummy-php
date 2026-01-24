@@ -1,12 +1,27 @@
+.PHONY: build up install update sniff beautify report
+
+build:
+	docker compose build dummy_php
+
 up:
-	docker compose build
 	docker compose up -d
 
+install:
+	make up
+	docker compose exec dummy_php composer install
+
+update:
+	make up
+	docker compose exec dummy_php composer update
+
 sniff:
-	docker exec php ./vendor/bin/phpcs ./src
+	make up
+	docker compose exec dummy_php ./vendor/bin/phpcs -w -p -s --standard=vendor/flyeralarm/php-code-validator/ruleset.xml ./src ./tests
 
 beautify:
-	docker exec php ./vendor/bin/phpcbf ./src
+	make up
+	docker compose exec dummy_php ./vendor/bin/phpcbf -w -p -s --standard=vendor/flyeralarm/php-code-validator/ruleset.xml ./src ./tests
 
 report:
-	docker exec php ./vendor/bin/phpmetrics ./src
+	make up
+	docker compose exec dummy_php ./vendor/bin/phpmetrics ./src --report-html=./report

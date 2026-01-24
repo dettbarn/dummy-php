@@ -1,7 +1,8 @@
 services:
-  php:
+  dummy_php:
     build: .
-    container_name: php
+    container_name: dummy-php
     command: tail -F anything
     volumes:
       - .:/app
+    tty: true
