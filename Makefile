@@ -1,4 +1,4 @@
-.PHONY: build up install update sniff beautify report
+.PHONY: build up install update sniff beautify report dependencygraph metrics all
 
 build:
 	docker compose build dummy_php
@@ -25,3 +25,18 @@ beautify:
 report:
 	make up
 	docker compose exec dummy_php ./vendor/bin/phpmetrics ./src --report-html=./report
+
+dependencygraph:
+	make up
+	rm -f vendor/dettbarn/dependencygraph/output/*.png
+	docker compose exec dummy_php ./vendor/bin/dependencygraph report/classes.js 'Test\DummyPhp\Root' report/package_relations.html 'Test'
+
+metrics:
+	make up
+	make report
+	make dependencygraph
+
+all:
+	make up
+	make sniff
+	make metrics
