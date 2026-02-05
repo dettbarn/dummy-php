@@ -4,9 +4,54 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cebf7798080e40bac8a1d31839b6d623",
+    "content-hash": "d0afc86e68bce2cfd9833e122eed52cb",
     "packages": [],
     "packages-dev": [
+        {
+            "name": "dettbarn/dependencygraph",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dettbarn/DependencyGraph.git",
+                "reference": "2c1b44e009bacc71f746f4649f0e8730994207cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dettbarn/DependencyGraph/zipball/2c1b44e009bacc71f746f4649f0e8730994207cf",
+                "reference": "2c1b44e009bacc71f746f4649f0e8730994207cf",
+                "shasum": ""
+            },
+            "require": {
+                "graphp/graphviz": "1.*"
+            },
+            "require-dev": {
+                "flyeralarm/php-code-validator": "*"
+            },
+            "bin": [
+                "bin/dependencygraph"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dettbarn\\DependencyGraph\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dettbarn"
+                }
+            ],
+            "description": "Analyse and visualise the PHP class structure obtained from PhpMetrics",
+            "support": {
+                "issues": "https://github.com/dettbarn/DependencyGraph/issues",
+                "source": "https://github.com/dettbarn/DependencyGraph/tree/0.2.0"
+            },
+            "time": "2026-01-24T18:26:31+00:00"
+        },
         {
             "name": "flyeralarm/php-code-validator",
             "version": "4.1.1",
@@ -45,6 +90,119 @@
                 "source": "https://github.com/flyeralarm/php-code-validator/tree/4.1.1"
             },
             "time": "2024-12-03T15:35:19+00:00"
+        },
+        {
+            "name": "graphp/graph",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/graphp/graph.git",
+                "reference": "0adb04de628a69498d8110705fc54cb47d8fc6a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/graphp/graph/zipball/0adb04de628a69498d8110705fc54cb47d8fc6a1",
+                "reference": "0adb04de628a69498d8110705fc54cb47d8fc6a1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5 || ^5.7 || ^4.8.35"
+            },
+            "suggest": {
+                "graphp/algorithms": "Common graph algorithms, such as Dijkstra and Moore-Bellman-Ford (shortest path), minimum spanning tree (MST), Kruskal, Prim and many more..",
+                "graphp/graphviz": "GraphViz graph drawing / DOT output"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Graphp\\Graph\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Lück",
+                    "email": "christian@clue.engineering"
+                }
+            ],
+            "description": "GraPHP is the mathematical graph/network library written in PHP.",
+            "homepage": "https://github.com/graphp/graph",
+            "keywords": [
+                "edge",
+                "graph",
+                "mathematical",
+                "network",
+                "vertex"
+            ],
+            "support": {
+                "issues": "https://github.com/graphp/graph/issues",
+                "source": "https://github.com/graphp/graph/tree/1.x"
+            },
+            "funding": [
+                {
+                    "url": "https://clue.engineering/support",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/clue",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-10-27T09:51:59+00:00"
+        },
+        {
+            "name": "graphp/graphviz",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/graphp/graphviz.git",
+                "reference": "686f747ce1f4d979aec9075fa6b9732b19e1ac53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/graphp/graphviz/zipball/686f747ce1f4d979aec9075fa6b9732b19e1ac53",
+                "reference": "686f747ce1f4d979aec9075fa6b9732b19e1ac53",
+                "shasum": ""
+            },
+            "require": {
+                "graphp/graph": "^1@dev",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.35"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Graphp\\GraphViz\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "GraphViz graph drawing for the mathematical graph/network library GraPHP.",
+            "homepage": "https://github.com/graphp/graphviz",
+            "keywords": [
+                "dot output",
+                "graph drawing",
+                "graph image",
+                "graphp",
+                "graphviz"
+            ],
+            "support": {
+                "issues": "https://github.com/graphp/graphviz/issues",
+                "source": "https://github.com/graphp/graphviz/tree/1.x"
+            },
+            "time": "2023-10-16T07:28:12+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -248,9 +406,9 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {},
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
