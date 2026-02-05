@@ -1,6 +1,6 @@
 {
     "name": "test/dummy-php",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "Dummy PHP package for testing stuff",
     "autoload": {
         "psr-4": {
@@ -11,5 +11,10 @@
         "phpmetrics/phpmetrics": "v2.*",
         "squizlabs/php_codesniffer": "3.*|4.*",
         "flyeralarm/php-code-validator": "^4.1"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "dettbarn/dependencygraph": "dev-autoload-fix"
     }
 }
