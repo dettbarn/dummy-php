@@ -4,20 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05fe9662f51c18b94f37a4d1607b4da5",
-    "packages": [
+    "content-hash": "d0afc86e68bce2cfd9833e122eed52cb",
+    "packages": [],
+    "packages-dev": [
         {
             "name": "dettbarn/dependencygraph",
-            "version": "dev-autoload-fix",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dettbarn/DependencyGraph.git",
-                "reference": "742d3e4be3226a51dfe0c617618a592ae38f5728"
+                "reference": "2c1b44e009bacc71f746f4649f0e8730994207cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dettbarn/DependencyGraph/zipball/742d3e4be3226a51dfe0c617618a592ae38f5728",
-                "reference": "742d3e4be3226a51dfe0c617618a592ae38f5728",
+                "url": "https://api.github.com/repos/dettbarn/DependencyGraph/zipball/2c1b44e009bacc71f746f4649f0e8730994207cf",
+                "reference": "2c1b44e009bacc71f746f4649f0e8730994207cf",
                 "shasum": ""
             },
             "require": {
@@ -47,9 +48,48 @@
             "description": "Analyse and visualise the PHP class structure obtained from PhpMetrics",
             "support": {
                 "issues": "https://github.com/dettbarn/DependencyGraph/issues",
-                "source": "https://github.com/dettbarn/DependencyGraph/tree/autoload-fix"
+                "source": "https://github.com/dettbarn/DependencyGraph/tree/0.2.0"
             },
-            "time": "2026-01-24T17:50:48+00:00"
+            "time": "2026-01-24T18:26:31+00:00"
+        },
+        {
+            "name": "flyeralarm/php-code-validator",
+            "version": "4.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flyeralarm/php-code-validator.git",
+                "reference": "d5552966debf5258b1400cb7b08f11dda9e3d4b9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flyeralarm/php-code-validator/zipball/d5552966debf5258b1400cb7b08f11dda9e3d4b9",
+                "reference": "d5552966debf5258b1400cb7b08f11dda9e3d4b9",
+                "shasum": ""
+            },
+            "require": {
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "config",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Müller",
+                    "email": "daniel.mueller@flyeralarm.com"
+                },
+                {
+                    "name": "Maximilian Grosch",
+                    "email": "maximilian.grosch@flyeralarm.com"
+                }
+            ],
+            "description": "A custom coding standard for FLYERALARM",
+            "support": {
+                "issues": "https://github.com/flyeralarm/php-code-validator/issues",
+                "source": "https://github.com/flyeralarm/php-code-validator/tree/4.1.1"
+            },
+            "time": "2024-12-03T15:35:19+00:00"
         },
         {
             "name": "graphp/graph",
@@ -163,47 +203,6 @@
                 "source": "https://github.com/graphp/graphviz/tree/1.x"
             },
             "time": "2023-10-16T07:28:12+00:00"
-        }
-    ],
-    "packages-dev": [
-        {
-            "name": "flyeralarm/php-code-validator",
-            "version": "4.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/flyeralarm/php-code-validator.git",
-                "reference": "d5552966debf5258b1400cb7b08f11dda9e3d4b9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/flyeralarm/php-code-validator/zipball/d5552966debf5258b1400cb7b08f11dda9e3d4b9",
-                "reference": "d5552966debf5258b1400cb7b08f11dda9e3d4b9",
-                "shasum": ""
-            },
-            "require": {
-                "squizlabs/php_codesniffer": "^3.5"
-            },
-            "type": "config",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Daniel Müller",
-                    "email": "daniel.mueller@flyeralarm.com"
-                },
-                {
-                    "name": "Maximilian Grosch",
-                    "email": "maximilian.grosch@flyeralarm.com"
-                }
-            ],
-            "description": "A custom coding standard for FLYERALARM",
-            "support": {
-                "issues": "https://github.com/flyeralarm/php-code-validator/issues",
-                "source": "https://github.com/flyeralarm/php-code-validator/tree/4.1.1"
-            },
-            "time": "2024-12-03T15:35:19+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -408,9 +407,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "dettbarn/dependencygraph": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {},
