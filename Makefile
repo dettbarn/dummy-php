@@ -1,4 +1,4 @@
-.PHONY: build up install update sniff beautify report dependencygraph metrics all
+.PHONY: build up install update sniff beautify analyse report dependencygraph metrics all
 
 build:
 	docker compose build dummy_php
@@ -22,6 +22,10 @@ beautify:
 	make up
 	docker compose exec dummy_php ./vendor/bin/phpcbf -w -p -s --standard=vendor/flyeralarm/php-code-validator/ruleset.xml ./src ./tests
 
+analyse:
+	make up
+	docker compose exec dummy_php ./vendor/bin/phpstan analyse -c tools/phpstan.neon
+
 report:
 	make up
 	docker compose exec dummy_php ./vendor/bin/phpmetrics ./src --report-html=./report
@@ -39,4 +43,5 @@ metrics:
 all:
 	make up
 	make sniff
+	make analyse
 	make metrics

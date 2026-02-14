@@ -11,4 +11,14 @@ class Root
         private readonly Dependency2 $dependency2
     ) {
     }
+
+    public function get1(): Dependency1
+    {
+        return $this->dependency1;
+    }
+
+    public function get2(): Dependency2
+    {
+        return $this->dependency2;
+    }
 }

@@ -7,13 +7,12 @@
             "Test\\DummyPhp\\": "src/"
         }
     },
-    "require": {
-    },
     "require-dev": {
         "phpmetrics/phpmetrics": "v2.*",
         "squizlabs/php_codesniffer": "3.*|4.*",
         "flyeralarm/php-code-validator": "^4.1",
-        "dettbarn/dependencygraph": "^0.2.0"
+        "dettbarn/dependencygraph": "^0.2.0",
+        "phpstan/phpstan": "^2.1"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
