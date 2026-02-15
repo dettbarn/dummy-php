@@ -26,7 +26,8 @@
         "povils/phpmnd": "dev-master",
         "phpat/phpat": "^0.12.2",
         "deptrac/deptrac": "^4.6",
-        "phpunit/phpunit": "^12.5"
+        "phpunit/phpunit": "^12.5",
+        "rector/rector": "^2.3"
     },
     "minimum-stability": "dev",
     "prefer-stable": true

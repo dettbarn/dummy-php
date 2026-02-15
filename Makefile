@@ -1,4 +1,4 @@
-.PHONY: build up install update sniff beautify analyse report dependencygraph metrics all
+.PHONY: build up install update sniff beautify analyse report dependencygraph metrics rector all
 
 build:
 	docker compose build dummy_php
@@ -43,8 +43,13 @@ metrics:
 	make report
 	make dependencygraph
 
+rector:
+	make up
+	docker compose exec dummy_php ./vendor/bin/rector process --dry-run -c tools/rector.php
+
 all:
 	make up
 	make sniff
 	make analyse
 	make metrics
+	make rector
