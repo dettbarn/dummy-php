@@ -10,6 +10,11 @@
             "Test\\DummyPhp\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Test\\DummyPhp\\": "tests/"
+        }
+    },
     "require-dev": {
         "phpmetrics/phpmetrics": "v2.*",
         "squizlabs/php_codesniffer": "3.*|4.*",
@@ -18,7 +23,8 @@
         "phpstan/phpstan": "^2.1",
         "roave/security-advisories": "dev-latest",
         "vimeo/psalm": "6.*",
-        "povils/phpmnd": "dev-master"
+        "povils/phpmnd": "dev-master",
+        "phpat/phpat": "^0.12.2"
     },
     "minimum-stability": "dev",
     "prefer-stable": true

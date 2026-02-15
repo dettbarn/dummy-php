@@ -3,3 +3,13 @@ parameters:
 	paths:
 		- ../src
 		- ../tests
+		- ../tests/architecture
+	phpat:
+		ignore_built_in_classes: true
+includes:
+	- ../vendor/phpat/phpat/extension.neon
+services:
+    -
+        class: Tests\Test\DummyPhp\Architecture\ArchitectureTest
+        tags:
+            - phpat.test
