@@ -24,7 +24,8 @@
         "roave/security-advisories": "dev-latest",
         "vimeo/psalm": "6.*",
         "povils/phpmnd": "dev-master",
-        "phpat/phpat": "^0.12.2"
+        "phpat/phpat": "^0.12.2",
+        "deptrac/deptrac": "^4.6"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
