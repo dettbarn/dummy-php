@@ -25,7 +25,8 @@
         "vimeo/psalm": "6.*",
         "povils/phpmnd": "dev-master",
         "phpat/phpat": "^0.12.2",
-        "deptrac/deptrac": "^4.6"
+        "deptrac/deptrac": "^4.6",
+        "phpunit/phpunit": "^12.5"
     },
     "minimum-stability": "dev",
     "prefer-stable": true

@@ -10,5 +10,8 @@ RUN apk add php-simplexml php-xmlwriter
 # for psalm
 RUN apk add php-ctype
 
+# for phpunit
+RUN apk add php-xml
+
 WORKDIR /app
 COPY . .
