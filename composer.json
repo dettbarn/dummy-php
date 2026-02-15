@@ -2,6 +2,9 @@
     "name": "test/dummy-php",
     "version": "0.1.0",
     "description": "Dummy PHP package for testing stuff",
+    "_comment": [
+        "minimum-stability and prefer-stable are customized because of dettbarn/dependencygraph"
+    ],
     "autoload": {
         "psr-4": {
             "Test\\DummyPhp\\": "src/"
@@ -14,7 +17,8 @@
         "dettbarn/dependencygraph": "^0.2.0",
         "phpstan/phpstan": "^2.1",
         "roave/security-advisories": "dev-latest",
-        "vimeo/psalm": "6.*"
+        "vimeo/psalm": "6.*",
+        "povils/phpmnd": "dev-master"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
