@@ -13,7 +13,8 @@
         "flyeralarm/php-code-validator": "^4.1",
         "dettbarn/dependencygraph": "^0.2.0",
         "phpstan/phpstan": "^2.1",
-        "roave/security-advisories": "dev-latest"
+        "roave/security-advisories": "dev-latest",
+        "vimeo/psalm": "6.*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true

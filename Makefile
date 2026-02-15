@@ -25,6 +25,7 @@ beautify:
 analyse:
 	make up
 	docker compose exec dummy_php ./vendor/bin/phpstan analyse -c tools/phpstan.neon
+	docker compose exec dummy_php ./vendor/bin/psalm --no-cache -c tools/psalm.xml
 
 report:
 	make up
