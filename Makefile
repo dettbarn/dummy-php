@@ -1,10 +1,13 @@
-.PHONY: build up install update du sniff beautify analyse report dependencygraph metrics rector test infection updatehooks all
+.PHONY: build up down install update du sniff beautify analyse report dependencygraph metrics rector test infection updatehooks all
 
 build:
 	docker compose build dummy_php
 
 up:
 	docker compose up -d
+
+down:
+	docker compose down
 
 install:
 	make up
@@ -69,8 +72,8 @@ updatehooks:
 all:
 	make up
 	make sniff
-	make analyse
 	make metrics
 	make rector
 	make test
 	make infection
+	make analyse
