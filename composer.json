@@ -27,7 +27,9 @@
         "phpat/phpat": "^0.12.2",
         "deptrac/deptrac": "^4.6",
         "phpunit/phpunit": "^12.5",
-        "infection/infection": "^0.32.4"
+        "infection/infection": "^0.32.4",
+        "bitexpert/captainhook-infection": "^0.7.0",
+        "captainhook/captainhook": "^5.28"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
