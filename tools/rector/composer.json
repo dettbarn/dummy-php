@@ -1,0 +1,11 @@
+{
+    "name": "test/dummy-php-rector",
+    "version": "0.1.0",
+    "description": "Dummy PHP package for testing stuff: dedicated composer project for rector",
+    "_comment": [
+        "We need to isolate rector because of the nikic/php-parser issue"
+    ],
+    "require-dev": {
+        "rector/rector": "^2.3"
+    }
+}

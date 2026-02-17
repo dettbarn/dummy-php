@@ -13,5 +13,14 @@ RUN apk add php-ctype
 # for phpunit
 RUN apk add php-xml
 
+# for infection
+RUN apk add --update linux-headers
+RUN apk add --no-cache $PHPIZE_DEPS \
+    && pecl install xdebug \
+    && docker-php-ext-enable xdebug
+
+# for dependencygraph
+RUN apk add graphviz
+
 WORKDIR /app
 COPY . .

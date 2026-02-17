@@ -3,7 +3,7 @@ parameters:
 	paths:
 		- ../src
 		- ../tests
-		- ../tests/architecture
+		- ../tests/Architecture
 	phpat:
 		ignore_built_in_classes: true
 includes:
