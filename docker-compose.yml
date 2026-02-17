@@ -3,6 +3,8 @@ services:
     build: .
     container_name: dummy-php
     command: tail -F anything
+    environment:
+      - XDEBUG_MODE=coverage
     volumes:
       - .:/app
     tty: true

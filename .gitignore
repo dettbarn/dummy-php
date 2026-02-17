@@ -1,2 +1,4 @@
 report/
 vendor/
+.deptrac.cache
+.phpunit.result.cache

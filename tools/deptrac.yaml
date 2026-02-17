@@ -1,0 +1,24 @@
+deptrac:
+  paths:
+    - ../src
+  exclude_files:
+    - '#.*tests.*#'
+  layers:
+    - name: Controller
+      collectors:
+        - type: classLike
+          value: .*Root.*
+    - name: Repository
+      collectors:
+        - type: classLike
+          value: .*Repository.*
+    - name: Service
+      collectors:
+        - type: classLike
+          value: .*Dependency.*
+  ruleset:
+    Controller:
+      - Service
+    Service:
+      - Repository
+    Repository: ~

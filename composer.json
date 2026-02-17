@@ -2,19 +2,41 @@
     "name": "test/dummy-php",
     "version": "0.1.0",
     "description": "Dummy PHP package for testing stuff",
+    "_comment": [
+        "minimum-stability and prefer-stable are customized because of dettbarn/dependencygraph"
+    ],
     "autoload": {
         "psr-4": {
             "Test\\DummyPhp\\": "src/"
         }
     },
-    "require": {
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Test\\DummyPhp\\": "tests/"
+        }
     },
     "require-dev": {
         "phpmetrics/phpmetrics": "v2.*",
         "squizlabs/php_codesniffer": "3.*|4.*",
         "flyeralarm/php-code-validator": "^4.1",
-        "dettbarn/dependencygraph": "^0.2.0"
+        "dettbarn/dependencygraph": "^0.2.0",
+        "phpstan/phpstan": "^2.1",
+        "roave/security-advisories": "dev-latest",
+        "vimeo/psalm": "6.*",
+        "povils/phpmnd": "dev-master",
+        "phpat/phpat": "^0.12.2",
+        "deptrac/deptrac": "^4.6",
+        "phpunit/phpunit": "^12.5",
+        "infection/infection": "^0.32.4",
+        "bitexpert/captainhook-infection": "^0.7.0",
+        "captainhook/captainhook": "^5.28",
+        "giorgiosironi/eris": "^1.0"
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "infection/extension-installer": true
+        }
+    }
 }
