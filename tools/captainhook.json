@@ -30,5 +30,8 @@
                 }
             }
         ]
+    },
+    "config": {
+        "bootstrap": "../vendor/autoload.php"
     }
 }

@@ -64,7 +64,7 @@ infection:
 
 updatehooks:
 	make up
-	docker compose exec dummy_php ./vendor/bin/captainhook install
+	docker compose exec dummy_php ./vendor/bin/captainhook install --configuration=tools/captainhook.json
 
 all:
 	make up
